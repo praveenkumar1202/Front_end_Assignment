@@ -1,0 +1,53 @@
+.chat{
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: space-between;
+    width: 920px;
+    height: 70px; 
+    background-color: rgb(245, 245, 245);
+    
+}
+.chat_body{
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    background-image: url("https://cutewallpaper.org/21/whatsapp-background-wallpaper/Whatsapp-Background-Polandballart.png");
+    flex-grow: 1;
+} 
+
+#header_icon{
+    padding-left: 30px;
+}
+.chat_header{
+    padding: 20px;
+}
+.chat_headerInfo{
+   
+    margin-right: 550px;
+    height: 80px;
+    margin-top: 0;
+    width: auto;
+}
+.chat_footer{
+    flex-shrink: 0;
+    display: flex;
+    height: 50px;
+    background-color: rgb(245, 245, 245);
+    align-items: center;
+    justify-content: space-around;
+}
+.emoji{
+    padding: 10px;
+}
+.chatMic{
+    padding: 10px;
+}
+input,button{
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+button:hover{
+    background-color: lightgreen;
+}
