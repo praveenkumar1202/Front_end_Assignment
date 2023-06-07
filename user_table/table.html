@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TableView-Assignment</title>
+  
+  <link rel="stylesheet" href="table.css">
+  <script src="table.js"></script>
+</head>
+<body>
+  <h1 class="header" style="text-align: center;">TABLE VIEW FOR USER LIST</h1>
+  <table class="table">
+    <thead>
+      <tr class="row">
+        <th>#</th>
+        <th>User name</th>
+        <th>User type</th>
+        <th>Last accessed time</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="row">
+        <td>1</td>
+        <td>praveen</td>
+        <td>intern</td>
+        <td>30-05-2023 5:30pm</td>
+        <td><button class="view-button" onclick="openModal('praveen', '1202', 'intern', 'praveen', '30-05-2023 5:30pm', '+91 9876501234', 'praveen12@example.com')">View</button></td>
+      </tr>
+      <tr class="row">
+        <td>2</td>
+        <td>manoj</td>
+        <td>Employee</td>
+        <td>30-05-2023 6:30pm</td>
+        <td><button class="view-button" onclick="openModal('Manoj', '2603', 'intern', 'praveen', '30-05-2023 6:30pm', '+1 987651234', 'manoj26@example.com')">View</button></td>
+      </tr>
+      <tr class="row">
+        <td>3</td>
+        <td>Santhosh</td>
+        <td>student</td>
+        <td>30-05-2023 7:30pm</td>
+        <td><button class="view-button" onclick="openModal('santhosh', '1009', 'student', 'praveen', '30-05-2023 7:30pm', '+1 987651234', 'santhosh10@example.com')">View</button></td>
+      </tr>
+      <tr class="row">
+        <td>4</td>
+        <td>Lakshwanth</td>
+        <td>Intern</td>
+        <td>30-05-2023 8:30pm</td>
+        <td><button class="view-button" onclick="openModal('Lakshwnth', '1703', 'Intern', 'praveen', '30-05-2023 8:30pm', '+1 987651234', 'lakshwanth17@example.com')">View</button></td>
+      </tr>
+      <tr class="row">
+        <td>5</td>
+        <td>Rajha selvam</td>
+        <td>Intern</td>
+        <td>30-05-2023 9:30pm</td>
+        <td><button class="view-button" onclick="openModal('Rajha selvam', '0912', 'Intern', 'praveen', '30-05-2023 9:30pm', '+1 987651234', 'rajhaselvam09@example.com')">View</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <div id="userModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>User Details</h2>
+      <div id="userForm">
+        <p id="userDetails"></p>
+        <div class="modal-buttons">
+          <button type="button" id="submitBtn">Submit</button>
+          <button type="button" id="closeBtn">Close</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+</body>
+</html>
