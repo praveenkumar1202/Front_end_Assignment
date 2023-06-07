@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+}
+.name{
+    color: white;
+    font-size: 100px;
+    font-family: 'Dancing Script', cursive;
+    cursor: pointer;
+    animation: glow 5s ease infinite;
+}
+@keyframes glow {
+    from{color:white;}
+    to{color: white;
+    text-shadow: 0 0 5px purple,0 0 25px purple, 0 0 50px purple, 0 0 100px purple;}
+}
+.designation{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+}
+button{
+    text-align: center;
+    margin-left:250px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: red;
+    padding: 2px;
+    
+}
+button:hover{
+    color: green;
+}
+img{
+    position: relative;
+    bottom:10px;
+    left: 40px;
+    width: 50px;
+    height: 50px;
+}
